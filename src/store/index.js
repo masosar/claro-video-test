@@ -1,9 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit';
 // reducer
-import users from './slices/users';
+import movies from './slices/movies';
 
 export default configureStore({
   reducer: {
-    users
+    movies
   }
 });

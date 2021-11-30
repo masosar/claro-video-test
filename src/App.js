@@ -1,15 +1,17 @@
-import Navbar from "./components/Navbar";
 import UserList from "./components/UserList";
-// redux
-import { Provider } from 'react-redux';
-import store from './store';
+import Header from "./components/Header";
 
 function App() {
   return (
-    <Provider store={store}>
-      <Navbar />
-      <UserList />
-    </Provider>
+    <div className="clarovideo-container">
+      <nav>
+        <Header />
+      </nav>
+      <main className="clarovideo-grid" data-testid="mainelement">
+        <UserList />
+      </main>
+      <footer className="clarovideo-footer">This is the footer</footer>
+    </div>
   );
 }
 

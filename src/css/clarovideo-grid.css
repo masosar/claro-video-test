@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    background: #000;
+    height: 100vh;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    background-color: rgb(27, 25, 25);
+    grid-area: nav;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+    background-color: rgb(172, 16, 16);
+}
+
+.clarovideo-container {
+    display: grid;
+    /* height: 100vh; */
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 1fr 0.2fr;
+    grid-template-areas:
+        "nav"
+        "main"
+        "footer"
+    ;
+    height: 100vh;
+}
+
+.clarovideo-header {
+    padding: 10px 20px;
+    display: flex;
+}
+
+.clarovideo-grid {
+    padding: 10px 20px;
+}
+
+.clarovideo-footer {
+    padding: 10px 20px;
+}
+
+
+
+
+
+.clarovideo-wrapper-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 290px);
+    grid-gap: 15px;
+    justify-content: center;
+  }
+  
+  .clarovideo-card-container {
+    overflow: hidden;
+    background-color: white;
+    position: relative;
+    width: 290px;
+    height: 163px;
+  }
+  
+  .clarovideo-banner-img {
+    width: 290px;
+    height: 163px;
+    cursor: pointer;
+  }
+  
